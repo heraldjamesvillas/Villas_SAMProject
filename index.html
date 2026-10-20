@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SysAdmin Path - System Administrator Career, Certifications, and Professional Development Platform" />
+  <title>SYSADMIN PATH // Career & Certification Roadmap</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="site-body">
+
+  <!-- Premium Video Background System -->
+  <div class="background-system" aria-hidden="true">
+    <video class="background-video" autoplay muted loop playsinline preload="metadata">
+      <source src="background.mp4" type="video/mp4" />
+    </video>
+    <div class="background-overlay"></div>
+    <div class="background-vignette"></div>
+    <div class="bg-grid-overlay"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-scanlines"></div>
+    <div class="bg-particles" id="bg-particles"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" aria-label="SysAdmin Path Home">
+        <span class="logo-terminal-icon">&gt;_</span>
+        <span class="logo-text">SYSADMIN<span class="logo-accent">.PATH</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#resources" class="nav-link">Resources</a>
+        <a href="#roadmap" class="nav-link">Career Roadmap</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <span class="status-pill"><span class="status-dot"></span> SYS_OK</span>
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-drawer">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#certifications" class="mobile-nav-link">Certifications</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#resources" class="mobile-nav-link">Resources</a>
+      <a href="#roadmap" class="mobile-nav-link">Career Roadmap</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+    <!-- 1. HERO / HOME SECTION -->
+    <section id="home" class="section hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="terminal-prefix">$</span> sysadmin --init career_pathway
+          </div>
+          <h1 class="hero-title">
+            Build the Skills.<br/>
+            Earn the Certifications.<br/>
+            <span class="text-highlight">Manage the Infrastructure.</span>
+          </h1>
+          <p class="hero-description">
+            A practical, industry-aligned career portfolio and roadmap designed for aspiring System Administrators. Explore core certifications, hands-on Linux/Windows skills, and modern infrastructure fundamentals.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#certifications" class="btn btn-primary">
+              <span>Explore Certifications</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#roadmap" class="btn btn-secondary">
+              <span>View Career Roadmap</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Terminal Command Center Box -->
+        <div class="hero-visual">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="btn-dot close"></span>
+                <span class="btn-dot minimize"></span>
+                <span class="btn-dot maximize"></span>
+              </div>
+              <div class="terminal-title">root@sysadmin-node-01:~# systemctl status</div>
+              <div class="terminal-node-id">ENV: PRODUCTION</div>
+            </div>
+            <div class="terminal-body">
+              <div class="cmd-line">
+                <span class="prompt">admin@node-01:~$</span> <span class="command">systemctl status infrastructure.service</span>
+              </div>
+              <div class="cmd-output">
+                <div class="output-row"><span class="out-label">● NETWORK</span> <span class="out-val text-green">ONLINE</span> <span class="out-sub">(10 Gbps Uplink / BGP Routed)</span></div>
+                <div class="output-row"><span class="out-label">● SERVERS</span> <span class="out-val text-green">24 ACTIVE</span> <span class="out-sub">(Virtual Cluster + Bare Metal)</span></div>
+                <div class="output-row"><span class="out-label">● SECURITY</span> <span class="out-val text-cyan">ENABLED</span> <span class="out-sub">(UFW / SELinux Active)</span></div>
+                <div class="output-row"><span class="out-label">● BACKUPS</span> <span class="out-val text-green">HEALTHY</span> <span class="out-sub">(ZFS Snapshots Synced)</span></div>
+              </div>
+              <div class="cmd-banner">
+                SYSTEM STATUS: <span class="status-badge-inline">OPERATIONAL</span>
+              </div>
+              <div class="cmd-line cmd-line-interactive">
+                <span class="prompt">admin@node-01:~$</span> <span class="typing-target" id="hero-typewriter"></span><span class="blinking-cursor">█</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="hero-stats-bar">
+        <div class="stat-card">
+          <div class="stat-number" data-target="3">03+</div>
+          <div class="stat-label">Certification Paths</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="5">05+</div>
+          <div class="stat-label">Core Competency Domains</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="3">03+</div>
+          <div class="stat-label">Verified Official Portals</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="5">05</div>
+          <div class="stat-label">Structured Career Tiers</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section">
+      <div class="section-header">
+        <div class="section-tag">// CERTIFICATION_MATRIX</div>
+        <h2 class="section-title">Industry Standard Certifications</h2>
+        <p class="section-subtitle">
+          Engineered pathways to validate hardware, networking, enterprise Linux, and security administration credentials.
+        </p>
+      </div>
+
+      <!-- Filter and Search Controls -->
+      <div class="controls-wrapper">
+        <div class="search-box">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" id="cert-search-input" placeholder="Search certifications or skills..." aria-label="Search certifications" />
+        </div>
+        <div class="filter-buttons" role="tablist">
+          <button class="filter-btn active" data-filter="all">All Certs</button>
+          <button class="filter-btn" data-filter="beginner">Beginner</button>
+          <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+          <button class="filter-btn" data-filter="networking">Networking</button>
+          <button class="filter-btn" data-filter="linux">Linux</button>
+          <button class="filter-btn" data-filter="security">Security</button>
+        </div>
+      </div>
+
+      <!-- Certification Cards Grid -->
+      <div class="cert-grid" id="cert-grid-container">
+
+        <!-- CompTIA A+ -->
+        <article class="cert-card" data-tags="beginner core hardware support" data-level="beginner">
+          <div class="cert-card-header">
+            <div class="cert-badge-wrap">
+              <span class="cert-tag tag-entry">Beginner Level</span>
+              <span class="cert-org">CompTIA</span>
+            </div>
+            <h3 class="cert-title">CompTIA A+</h3>
+            <p class="cert-subtitle">Core IT Support & Infrastructure Hardware</p>
+          </div>
+          <div class="cert-card-body">
+            <p class="cert-desc">
+              The baseline certification for operational support, desktop administration, hardware diagnostics, basic networking, and operating system troubleshooting.
+            </p>
+            <div class="skills-tag-list">
+              <span class="skill-pill">Hardware</span>
+              <span class="skill-pill">Windows/Linux OS</span>
+              <span class="skill-pill">Troubleshooting</span>
+              <span class="skill-pill">Basic Security</span>
+            </div>
+            <div class="best-for-box">
+              <span class="best-label">Best For:</span> Entry-Level IT Technicians, Helpdesk Engineers, Desktop Support
+            </div>
+            
+            <div class="expandable-details" id="details-aplus">
+              <div class="details-content">
+                <h4>Exam Overview & Structure</h4>
+                <p>Consists of two exams (220-1101 & 220-1102) covering cloud virtualization, hardware infrastructure, software troubleshooting, and operational procedures.</p>
+                <ul>
+                  <li>Exam Duration: 90 minutes per core</li>
+                  <li>Passing Score: 675 / 700 (Scale 100-900)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card-footer">
+            <button class="btn-toggle-details" data-target="details-aplus">
+              <span>View Details</span>
+              <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <a href="https://www.comptia.org/certifications/a" target="_blank" rel="noopener noreferrer" class="btn-cert-link">
+              <span>Official Site</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- CompTIA Network+ -->
+        <article class="cert-card" data-tags="beginner intermediate networking security" data-level="networking">
+          <div class="cert-card-header">
+            <div class="cert-badge-wrap">
+              <span class="cert-tag tag-mid">Beginner–Intermediate</span>
+              <span class="cert-org">CompTIA</span>
+            </div>
+            <h3 class="cert-title">CompTIA Network+</h3>
+            <p class="cert-subtitle">Infrastructure & Network Operations</p>
+          </div>
+          <div class="cert-card-body">
+            <p class="cert-desc">
+              Validates core networking concepts, subnetting, switching, routing protocols, wireless infrastructure, cabling, and network troubleshooting techniques.
+            </p>
+            <div class="skills-tag-list">
+              <span class="skill-pill">IPv4/IPv6 Subnetting</span>
+              <span class="skill-pill">VLANs & Routing</span>
+              <span class="skill-pill">Network Security</span>
+              <span class="skill-pill">Packet Analysis</span>
+            </div>
+            <div class="best-for-box">
+              <span class="best-label">Best For:</span> Junior SysAdmins, Network Specialists, Infrastructure Analysts
+            </div>
+
+            <div class="expandable-details" id="details-netplus">
+              <div class="details-content">
+                <h4>Exam Overview & Domains</h4>
+                <p>Covers Networking Concepts (23%), Network Implementation (19%), Network Operations (19%), Network Security (19%), and Troubleshooting (20%).</p>
+                <ul>
+                  <li>Exam Code: N10-008</li>
+                  <li>Recommended Prep: 9–12 months hands-on experience</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card-footer">
+            <button class="btn-toggle-details" data-target="details-netplus">
+              <span>View Details</span>
+              <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <a href="https://www.comptia.org/certifications/network" target="_blank" rel="noopener noreferrer" class="btn-cert-link">
+              <span>Official Site</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Red Hat RHCSA -->
+        <article class="cert-card" data-tags="intermediate linux enterprise systems" data-level="intermediate linux">
+          <div class="cert-card-header">
+            <div class="cert-badge-wrap">
+              <span class="cert-tag tag-adv">Intermediate</span>
+              <span class="cert-org">Red Hat</span>
+            </div>
+            <h3 class="cert-title">Red Hat RHCSA</h3>
+            <p class="cert-subtitle">Enterprise Linux System Administration</p>
+          </div>
+          <div class="cert-card-body">
+            <p class="cert-desc">
+              Hands-on practical performance examination validating core Red Hat Enterprise Linux (RHEL) file management, user administration, storage, SELinux, and systemd service management.
+            </p>
+            <div class="skills-tag-list">
+              <span class="skill-pill">Linux CLI & Shell</span>
+              <span class="skill-pill">Storage & LVM</span>
+              <span class="skill-pill">SELinux & Firewall</span>
+              <span class="skill-pill">Services & Cron</span>
+            </div>
+            <div class="best-for-box">
+              <span class="best-label">Best For:</span> Linux System Administrators, Cloud Engineers, DevOps Associates
+            </div>
+
+            <div class="expandable-details" id="details-rhcsa">
+              <div class="details-content">
+                <h4>Exam Format: 100% Performance-Based</h4>
+                <p>Unlike multiple-choice exams, EX200 requires candidates to perform real administrative tasks on a live RHEL system in a 3-hour timed environment.</p>
+                <ul>
+                  <li>Exam Code: EX200</li>
+                  <li>Core Focus: CLI fluency, system recovery, storage provisioning</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card-footer">
+            <button class="btn-toggle-details" data-target="details-rhcsa">
+              <span>View Details</span>
+              <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <a href="https://www.redhat.com/en/services/certification/rhcsa" target="_blank" rel="noopener noreferrer" class="btn-cert-link">
+              <span>Official Site</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- CompTIA Security+ -->
+        <article class="cert-card" data-tags="intermediate security hardening" data-level="intermediate security">
+          <div class="cert-card-header">
+            <div class="cert-badge-wrap">
+              <span class="cert-tag tag-sec">Intermediate Security</span>
+              <span class="cert-org">CompTIA</span>
+            </div>
+            <h3 class="cert-title">CompTIA Security+</h3>
+            <p class="cert-subtitle">Infrastructure Hardening & Cybersecurity</p>
+          </div>
+          <div class="cert-card-body">
+            <p class="cert-desc">
+              Validates foundational baseline security practices, threat assessment, risk mitigation, identity management, cryptography, and server hardening techniques.
+            </p>
+            <div class="skills-tag-list">
+              <span class="skill-pill">Identity & Access (IAM)</span>
+              <span class="skill-pill">Threat Detection</span>
+              <span class="skill-pill">System Hardening</span>
+              <span class="skill-pill">PKI & Encryption</span>
+            </div>
+            <div class="best-for-box">
+              <span class="best-label">Best For:</span> Systems Engineers, Security Admins, SOC Analysts
+            </div>
+
+            <div class="expandable-details" id="details-secplus">
+              <div class="details-content">
+                <h4>Exam Overview</h4>
+                <p>Covers General Security Concepts, Threats/Vulnerabilities, Architecture/Design, Implementation, and Operations/Incident Response.</p>
+                <ul>
+                  <li>Exam Code: SY0-701</li>
+                  <li>Industry Standard for DoD 8570 compliance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card-footer">
+            <button class="btn-toggle-details" data-target="details-secplus">
+              <span>View Details</span>
+              <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <a href="https://www.comptia.org/certifications/security" target="_blank" rel="noopener noreferrer" class="btn-cert-link">
+              <span>Official Site</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Interactive Certification Comparison Matrix -->
+      <div class="comparison-wrapper">
+        <h3 class="comparison-title">// CERTIFICATION MATRIX COMPARISON</h3>
+        <div class="table-responsive">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Certification</th>
+                <th>Primary Focus Domain</th>
+                <th>Difficulty Level</th>
+                <th>Exam Style</th>
+                <th>Recommended Prerequisites</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-mono text-highlight">CompTIA A+</td>
+                <td>Hardware, OS & IT Helpdesk Support</td>
+                <td><span class="badge badge-green">Beginner</span></td>
+                <td>Multiple Choice + Performance-Based</td>
+                <td>Basic computer literacy</td>
+              </tr>
+              <tr>
+                <td class="font-mono text-highlight">CompTIA Network+</td>
+                <td>Network Architecture & Protocols</td>
+                <td><span class="badge badge-green">Beginner–Inter</span></td>
+                <td>Multiple Choice + Performance-Based</td>
+                <td>CompTIA A+ or equivalent knowledge</td>
+              </tr>
+              <tr>
+                <td class="font-mono text-highlight">Red Hat RHCSA</td>
+                <td>Linux Enterprise System Admin</td>
+                <td><span class="badge badge-cyan">Intermediate</span></td>
+                <td>100% Practical Hands-on CLI</td>
+                <td>Linux fundamentals + CLI practice</td>
+              </tr>
+              <tr>
+                <td class="font-mono text-highlight">CompTIA Security+</td>
+                <td>Infrastructure Hardening & Defense</td>
+                <td><span class="badge badge-cyan">Intermediate</span></td>
+                <td>Multiple Choice + Simulation</td>
+                <td>Network+ or basic networking foundation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS & QUALIFICATIONS SECTION -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <div class="section-tag">// COMPETENCY_MATRIX</div>
+        <h2 class="section-title">Core Technical Skills & Proficiency</h2>
+        <p class="section-subtitle">
+          Essential technical domains required to build, maintain, secure, and troubleshoot enterprise systems.
+        </p>
+      </div>
+
+      <div class="skills-layout">
+        <!-- Interactive Terminal Skill Visualizer -->
+        <div class="skills-visualizer-box">
+          <div class="visualizer-header">
+            <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+            <span class="header-text">sysadmin_competency_eval.sh</span>
+          </div>
+          <div class="visualizer-body" id="skills-bars-container">
+
+            <div class="skill-bar-item" data-percent="90">
+              <div class="skill-info">
+                <span class="skill-name">01 // Operating System Administration (Linux & Windows Server)</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fill fill-green" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item" data-percent="85">
+              <div class="skill-info">
+                <span class="skill-name">02 // Networking Infrastructure (TCP/IP, DNS, DHCP, VLANs)</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fill fill-cyan" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item" data-percent="90">
+              <div class="skill-info">
+                <span class="skill-name">03 // System Troubleshooting & Root-Cause Analysis</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fill fill-green" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item" data-percent="80">
+              <div class="skill-info">
+                <span class="skill-name">04 // Security Fundamentals, Hardening & Backups</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fill fill-cyan" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item" data-percent="75">
+              <div class="skill-info">
+                <span class="skill-name">05 // Automation & Scripting (Bash, PowerShell)</span>
+                <span class="skill-percentage">75%</span>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fill fill-green" style="width: 0%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Detailed Skill Explanations Accordion/Grid -->
+        <div class="skills-details-grid">
+          <div class="skill-detail-card">
+            <div class="skill-card-icon">01</div>
+            <div>
+              <h3 class="skill-card-title">Operating System Administration</h3>
+              <p class="skill-card-desc">
+                Managing server environments across RHEL, Ubuntu Server, and Windows Server. Configures active directories, user privileges, file permissions (POSIX/ACLs), mount points, systemd units, and kernel parameters.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-detail-card">
+            <div class="skill-card-icon">02</div>
+            <div>
+              <h3 class="skill-card-title">Enterprise Networking</h3>
+              <p class="skill-card-desc">
+                Understanding OSI layers, configuring static and dynamic routing, IP addressing (IPv4/IPv6), subnet calculations, DNS zone files, DHCP scopes, firewalls (UFW/iptables/firewalld), and VPN tunneling.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-detail-card">
+            <div class="skill-card-icon">03</div>
+            <div>
+              <h3 class="skill-card-title">Systematic Troubleshooting</h3>
+              <p class="skill-card-desc">
+                Utilizing log analysis utilities (journalctl, syslog, Event Viewer) and diagnostic CLI suites (top, htop, netstat, ss, tcpdump, ping, traceroute) to isolate bottlenecks and service disruptions.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-detail-card">
+            <div class="skill-card-icon">04</div>
+            <div>
+              <h3 class="skill-card-title">Security & Disaster Recovery</h3>
+              <p class="skill-card-desc">
+                Implementing the principle of least privilege, automated patch management, SSH key management, SELinux enforcement, and automated ZFS/Rsync offsite backups with integrity verification.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-detail-card">
+            <div class="skill-card-icon">05</div>
+            <div>
+              <h3 class="skill-card-title">Scripting & Infrastructure Automation</h3>
+              <p class="skill-card-desc">
+                Eliminating repetitive manual operations by writing robust Bash scripts and PowerShell modules for automated user provisioning, log rotation, system health checks, and scheduled cron jobs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. LEARNING RESOURCES SECTION -->
+    <section id="resources" class="section">
+      <div class="section-header">
+        <div class="section-tag">// KNOWLEDGE_BASE</div>
+        <h2 class="section-title">Verified Learning Resources</h2>
+        <p class="section-subtitle">
+          Direct, authoritative technical portals and documentation hubs for continuous skill improvement.
+        </p>
+      </div>
+
+      <div class="resource-grid">
+        <!-- Resource 1 -->
+        <div class="resource-card">
+          <div class="resource-header">
+            <span class="resource-type">OFFICIAL DOCUMENTATION</span>
+            <span class="resource-category">Linux / Infrastructure</span>
+          </div>
+          <h3 class="resource-title">Red Hat Customer Portal Documentation</h3>
+          <p class="resource-desc">
+            The gold standard for Enterprise Linux documentation. Provides comprehensive guides on RHEL administration, storage management, SELinux policies, and security hardening.
+          </p>
+          <div class="resource-meta">
+            <span class="meta-label">Recommended Use:</span> Practical CLI syntax, system administration reference, RHCSA exam preparation.
+          </div>
+          <a href="https://access.redhat.com/documentation" target="_blank" rel="noopener noreferrer" class="btn-resource-link">
+            <span>Visit Resource</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+        <!-- Resource 2 -->
+        <div class="resource-card">
+          <div class="resource-header">
+            <span class="resource-type">OFFICIAL LEARNING PLATFORM</span>
+            <span class="resource-category">Windows / Azure / Scripting</span>
+          </div>
+          <h3 class="resource-title">Microsoft Learn Portal</h3>
+          <p class="resource-desc">
+            Interactive modular learning paths covering Windows Server administration, PowerShell scripting modules, Active Directory Domain Services (AD DS), and hybrid cloud infrastructure.
+          </p>
+          <div class="resource-meta">
+            <span class="meta-label">Recommended Use:</span> Hands-on sandboxes for Active Directory, Windows Server, and PowerShell automation.
+          </div>
+          <a href="https://learn.microsoft.com/" target="_blank" rel="noopener noreferrer" class="btn-resource-link">
+            <span>Visit Resource</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+        <!-- Resource 3 -->
+        <div class="resource-card">
+          <div class="resource-header">
+            <span class="resource-type">CERTIFICATION BODY</span>
+            <span class="resource-category">Certification Objectives</span>
+          </div>
+          <h3 class="resource-title">CompTIA Official Training Hub</h3>
+          <p class="resource-desc">
+            Official exam objectives, domain breakdown guides, and practice frameworks for A+, Network+, Security+, and Linux+ certification paths.
+          </p>
+          <div class="resource-meta">
+            <span class="meta-label">Recommended Use:</span> Verifying exam syllabus alignment and objective mapping.
+          </div>
+          <a href="https://www.comptia.org/training/resources" target="_blank" rel="noopener noreferrer" class="btn-resource-link">
+            <span>Visit Resource</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CAREER ROADMAP & JOURNEY -->
+    <section id="roadmap" class="section">
+      <div class="section-header">
+        <div class="section-tag">// PROGRESSION_PATHWAY</div>
+        <h2 class="section-title">System Administrator Career Roadmap</h2>
+        <p class="section-subtitle">
+          A structured 5-tier progression path detailing responsibilities, required skills, and certifications from helpdesk to cloud infrastructure engineer.
+        </p>
+      </div>
+
+      <!-- Timeline Career Nodes -->
+      <div class="roadmap-container">
+        <div class="roadmap-timeline-line"></div>
+
+        <!-- Stage 1 -->
+        <div class="roadmap-node" data-stage="1">
+          <div class="node-marker">01</div>
+          <div class="node-content">
+            <span class="node-tier">TIER 1 ENTRY</span>
+            <h3 class="node-title">IT Support / Helpdesk Specialist</h3>
+            <p class="node-desc">Frontline technical troubleshooting, desktop hardware installation, OS deployment, user ticket management, and peripheral configuration.</p>
+            <div class="node-tags">
+              <span class="node-tag">CompTIA A+</span>
+              <span class="node-tag">Ticketing Systems</span>
+              <span class="node-tag">Hardware Diagnostics</span>
+            </div>
+            <div class="node-next">Next Step: Expand network troubleshooting and script basic tasks.</div>
+          </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="roadmap-node" data-stage="2">
+          <div class="node-marker">02</div>
+          <div class="node-content">
+            <span class="node-tier">TIER 2 ASSOCIATE</span>
+            <h3 class="node-title">Junior System Administrator</h3>
+            <p class="node-desc">User account provisioning, Active Directory / LDAP management, network share permissions, routine patch management, and monitoring alert response.</p>
+            <div class="node-tags">
+              <span class="node-tag">CompTIA Network+</span>
+              <span class="node-tag">Active Directory</span>
+              <span class="node-tag">Bash / PowerShell</span>
+            </div>
+            <div class="node-next">Next Step: Master Linux command line and web server stack administration.</div>
+          </div>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="roadmap-node" data-stage="3">
+          <div class="node-marker">03</div>
+          <div class="node-content">
+            <span class="node-tier">TIER 3 MID-LEVEL</span>
+            <h3 class="node-title">System Administrator</h3>
+            <p class="node-desc">Full lifecycle server administration (Linux/Windows), hypervisor management, backup execution, storage volume allocation, and network security tuning.</p>
+            <div class="node-tags">
+              <span class="node-tag">Red Hat RHCSA</span>
+              <span class="node-tag">Virtualization (Proxmox/ESXi)</span>
+              <span class="node-tag">Backup Topology</span>
+            </div>
+            <div class="node-next">Next Step: Advanced automation, Ansible configuration management, high availability.</div>
+          </div>
+        </div>
+
+        <!-- Stage 4 -->
+        <div class="roadmap-node" data-stage="4">
+          <div class="node-marker">04</div>
+          <div class="node-content">
+            <span class="node-tier">TIER 4 SENIOR</span>
+            <h3 class="node-title">Senior System Administrator</h3>
+            <p class="node-desc">Architecture design, high availability cluster orchestration, disaster recovery testing, compliance auditing, and mentoring junior systems staff.</p>
+            <div class="node-tags">
+              <span class="node-tag">RHCE / AWS SysOps</span>
+              <span class="node-tag">Ansible / Terraform</span>
+              <span class="node-tag">Incident Lead</span>
+            </div>
+            <div class="node-next">Next Step: Multi-cloud architecture, DevOps integration, and infrastructure as code.</div>
+          </div>
+        </div>
+
+        <!-- Stage 5 -->
+        <div class="roadmap-node" data-stage="5">
+          <div class="node-marker">05</div>
+          <div class="node-content">
+            <span class="node-tier">TIER 5 SPECIALIZED</span>
+            <h3 class="node-title">Infrastructure / Cloud Engineer</h3>
+            <p class="node-desc">Cloud-native infrastructure provisioning (AWS/Azure), container orchestration (Kubernetes/Docker), CI/CD pipeline integration, and site reliability engineering.</p>
+            <div class="node-tags">
+              <span class="node-tag">Kubernetes (CKA)</span>
+              <span class="node-tag">Cloud Solutions Architect</span>
+              <span class="node-tag">SRE Practices</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive "Where Should I Start?" Tool -->
+      <div class="journey-planner">
+        <div class="planner-header">
+          <div class="planner-tag">// INTERACTIVE_ADVISOR</div>
+          <h3 class="planner-title">Where Should You Start Your Journey?</h3>
+          <p class="planner-desc">Select your current experience level or primary goal to receive a customized starting recommendation.</p>
+        </div>
+
+        <div class="planner-options">
+          <button class="planner-opt-btn active" data-path="newbie">I'm completely new to IT</button>
+          <button class="planner-opt-btn" data-path="basics">I have basic IT & PC knowledge</button>
+          <button class="planner-opt-btn" data-path="network">I understand basic networking</button>
+          <button class="planner-opt-btn" data-path="linux">I want to specialize in Linux</button>
+          <button class="planner-opt-btn" data-path="security">I want to move toward Security</button>
+        </div>
+
+        <div class="planner-result-box" id="planner-result">
+          <!-- Dynamic JS content injected here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ABOUT DEVELOPER SECTION -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <div class="section-tag">// AUTHOR_BIO</div>
+        <h2 class="section-title">About the Developer</h2>
+        <p class="section-subtitle">
+          Background, technical inspiration, and academic objectives behind this project.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <div class="about-grid">
+          <div class="about-profile-side">
+            <div class="developer-avatar-box">
+              <img 
+                src="profile.png" 
+                alt="Developer Profile Picture"
+                class="developer-profile-image"
+              >
+            </div>
+            <h3 class="developer-name" id="dev-name">HERALD JAMES H. VILLAS</h3>
+            <div class="developer-role" id="dev-program">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</div>
+            
+            <div class="developer-meta-list">
+              <div class="meta-item">
+                <span class="lbl">FOCUS:</span>
+                <span class="val">System Administration & Infrastructure</span>
+              </div>
+              <div class="meta-item">
+                <span class="lbl">PROJECT:</span>
+                <span class="val">Web-Based SysAdmin Portfolio</span>
+              </div>
+              <div class="meta-item">
+                <span class="lbl">STATUS:</span>
+                <span class="val text-green">Actively Learning & Building Labs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-bio-side">
+            <h4 class="bio-heading">// ACADEMIC & TECHNICAL OVERVIEW</h4>
+            <p class="bio-paragraph">
+              I am an IT student dedicated to understanding how enterprise networks, servers, and automated pipelines operate behind the applications modern society relies on daily.
+            </p>
+            <p class="bio-paragraph">
+              While developing <strong>SYSADMIN PATH</strong>, I set out to create a technical platform that merges clean web development standards with true System Administration concepts. Rather than listing static resume items, this project structures industry certifications, essential Linux/Windows competencies, and career roadmaps into an interactive tool for aspiring IT professionals.
+            </p>
+
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- References / Citations Area -->
+      <!-- =========================================================
+     OFFICIAL REFERENCES & SYSTEM FOOTER
+     ========================================================= -->
+
+<section class="official-references" id="references">
+
+  <div class="references-container">
+
+      <!-- Section Header -->
+      <div class="references-header">
+
+          <div class="references-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span>VERIFIED KNOWLEDGE SOURCES</span>
+              <span class="eyebrow-line"></span>
+          </div>
+
+          <h2>
+              OFFICIAL
+              <span>REFERENCES</span>
+          </h2>
+
+          <p>
+              Trusted certification bodies, official documentation,
+              and technical resources used throughout SYSADMIN.PATH.
+          </p>
+
+      </div>
+
+
+      <!-- Reference Grid -->
+      <div class="reference-grid">
+
+          <!-- Certification Bodies -->
+          <div class="reference-card">
+
+              <div class="reference-card-top">
+                  <div class="reference-icon">
+                      <span>&lt;/&gt;</span>
+                  </div>
+
+                  <div>
+                      <span class="reference-label">
+                          SOURCE_01
+                      </span>
+
+                      <h3>
+                          Official Certification Bodies
+                      </h3>
+                  </div>
+              </div>
+
+              <div class="reference-status">
+                  <span class="status-dot"></span>
+                  VERIFIED SOURCES
+              </div>
+
+              <div class="reference-links">
+
+                  <a
+                      href="https://www.comptia.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="reference-link"
+                  >
+                      <div class="link-number">01</div>
+
+                      <div class="link-content">
+                          <strong>
+                              CompTIA Certification Body
+                          </strong>
+
+                          <span>
+                              comptia.org
+                          </span>
+                      </div>
+
+                      <div class="link-arrow">
+                          ↗
+                      </div>
+                  </a>
+
+
+                  <a
+                      href="https://www.redhat.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="reference-link"
+                  >
+                      <div class="link-number">02</div>
+
+                      <div class="link-content">
+                          <strong>
+                              Red Hat Enterprise Certifications
+                          </strong>
+
+                          <span>
+                              redhat.com
+                          </span>
+                      </div>
+
+                      <div class="link-arrow">
+                          ↗
+                      </div>
+                  </a>
+
+
+                  <a
+                      href="https://learn.microsoft.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="reference-link"
+                  >
+                      <div class="link-number">03</div>
+
+                      <div class="link-content">
+                          <strong>
+                              Microsoft Certified Fundamentals
+                          </strong>
+
+                          <span>
+                              learn.microsoft.com
+                          </span>
+                      </div>
+
+                      <div class="link-arrow">
+                          ↗
+                      </div>
+                  </a>
+
+              </div>
+
+          </div>
+
+
+          <!-- Technical Documentation -->
+          <div class="reference-card">
+
+              <div class="reference-card-top">
+
+                  <div class="reference-icon">
+                      <span>▣</span>
+                  </div>
+
+                  <div>
+                      <span class="reference-label">
+                          SOURCE_02
+                      </span>
+
+                      <h3>
+                          Documentation &amp; Technical Resources
+                      </h3>
+                  </div>
+
+              </div>
+
+              <div class="reference-status">
+                  <span class="status-dot"></span>
+                  OFFICIAL DOCUMENTATION
+              </div>
+
+              <div class="reference-links">
+
+                  <a
+                      href="https://access.redhat.com/documentation"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="reference-link"
+                  >
+                      <div class="link-number">01</div>
+
+                      <div class="link-content">
+                          <strong>
+                              Red Hat Enterprise Linux Documentation
+                          </strong>
+
+                          <span>
+                              access.redhat.com/documentation
+                          </span>
+                      </div>
+
+                      <div class="link-arrow">
+                          ↗
+                      </div>
+                  </a>
+
+
+                  <a
+                      href="https://ubuntu.com/server/docs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="reference-link"
+                  >
+                      <div class="link-number">02</div>
+
+                      <div class="link-content">
+                          <strong>
+                              Ubuntu Server Official Guides
+                          </strong>
+
+                          <span>
+                              ubuntu.com/server/docs
+                          </span>
+                      </div>
+
+                      <div class="link-arrow">
+                          ↗
+                      </div>
+                  </a>
+
+
+                  <a
+                      href="https://docs.microsoft.com/en-us/powershell/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="reference-link"
+                  >
+                      <div class="link-number">03</div>
+
+                      <div class="link-content">
+                          <strong>
+                              PowerShell Official Documentation
+                          </strong>
+
+                          <span>
+                              docs.microsoft.com/en-us/powershell
+                          </span>
+                      </div>
+
+                      <div class="link-arrow">
+                          ↗
+                      </div>
+                  </a>
+
+              </div>
+
+          </div>
+
+      </div>
+
+
+      <!-- Source Integrity Bar -->
+      <div class="source-integrity">
+
+          <div class="integrity-left">
+
+              <span class="integrity-icon">
+                  ✓
+              </span>
+
+              <div>
+                  <strong>
+                      SOURCE INTEGRITY CHECK
+                  </strong>
+
+                  <span>
+                      References point to official organizations
+                      and documentation portals.
+                  </span>
+              </div>
+
+          </div>
+
+          <div class="integrity-code">
+              REF_PROTOCOL::VERIFIED
+          </div>
+
+      </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+   SYSTEM FOOTER
+   ========================================================= -->
+
+<footer class="system-footer">
+
+  <div class="footer-container">
+
+      <!-- Top Terminal Bar -->
+      <div class="footer-terminal-bar">
+
+          <div class="terminal-brand">
+              <span class="terminal-prompt">
+                  $
+              </span>
+
+              <span>
+                  SYSADMIN.PATH
+              </span>
+          </div>
+
+          <div class="terminal-version">
+              TERMINAL_VER 2.4.0
+          </div>
+
+      </div>
+
+
+      <!-- Footer Main -->
+      <div class="footer-main">
+
+          <!-- Brand -->
+          <div class="footer-brand">
+
+              <div class="footer-logo">
+                  <span class="logo-bracket">&lt;</span>
+                  <span class="logo-core">SP</span>
+                  <span class="logo-bracket">/&gt;</span>
+              </div>
+
+              <h3>
+                  SYSADMIN<span>.PATH</span>
+              </h3>
+
+              <p>
+                  System Administrator Career &amp;
+                  Certification Portfolio.
+                  Designed with high technical fidelity
+                  for aspiring IT professionals.
+              </p>
+
+              <div class="footer-system-tag">
+                  <span class="status-dot"></span>
+                  SYSTEM OPERATIONAL
+              </div>
+
+          </div>
+
+
+          <!-- Quick Navigation -->
+          <div class="footer-column">
+
+              <div class="footer-column-title">
+                  <span>01</span>
+                  QUICK NAVIGATION
+              </div>
+
+              <nav class="footer-nav">
+
+                  <a href="#home">
+                      <span>01</span>
+                      Home
+                  </a>
+
+                  <a href="#certifications">
+                      <span>02</span>
+                      Certifications
+                  </a>
+
+                  <a href="#skills">
+                      <span>03</span>
+                      Skills
+                  </a>
+
+                  <a href="#resources">
+                      <span>04</span>
+                      Resources
+                  </a>
+
+                  <a href="#career-roadmap">
+                      <span>05</span>
+                      Career Roadmap
+                  </a>
+
+                  <a href="#about">
+                      <span>06</span>
+                      About Developer
+                  </a>
+
+              </nav>
+
+          </div>
+
+
+          <!-- System Health -->
+          <div class="footer-column health-column">
+
+              <div class="footer-column-title">
+                  <span>02</span>
+                  SYSTEM HEALTH
+              </div>
+
+              <div class="system-health-panel">
+
+                  <div class="health-row">
+
+                      <span class="health-label">
+                          STATUS
+                      </span>
+
+                      <span class="health-value online">
+                          <span class="status-dot"></span>
+                          ONLINE
+                      </span>
+
+                  </div>
+
+
+                  <div class="health-row">
+
+                      <span class="health-label">
+                          NODE
+                      </span>
+
+                      <span class="health-value">
+                          PRODUCTION_01
+                      </span>
+
+                  </div>
+
+
+                  <div class="health-row">
+
+                      <span class="health-label">
+                          LATENCY
+                      </span>
+
+                      <span class="health-value">
+                          12ms
+                      </span>
+
+                  </div>
+
+
+                  <div class="health-row">
+
+                      <span class="health-label">
+                          ENCRYPTION
+                      </span>
+
+                      <span class="health-value">
+                          TLS_AES_256
+                      </span>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+
+          <div class="copyright">
+              © 2026 SYSADMIN PATH.
+              Built as an individual web development project.
+          </div>
+
+          <div class="footer-status">
+
+              <span class="status-dot"></span>
+
+              <span>
+                  ALL SYSTEMS NOMINAL
+              </span>
+
+          </div>
+
+          <div class="footer-terminal">
+              TERMINAL_VER 2.4.0
+          </div>
+
+      </div>
+
+  </div>
+
+</footer>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col-main">
+        <div class="footer-brand">SYSADMIN<span class="logo-accent">.PATH</span></div>
+        <p class="footer-tagline">
+          System Administrator Career & Certification Portfolio. Designed with high technical fidelity for aspiring IT professionals.
+        </p>
+      </div>
+
+      <div class="footer-col-links">
+        <div class="footer-nav-title">Quick Navigation</div>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#roadmap">Career Roadmap</a></li>
+          <li><a href="#about">About Developer</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col-sys">
+        <div class="footer-nav-title">System Health</div>
+        <div class="sys-status-card">
+          <div class="sys-status-line"><span class="status-dot"></span> STATUS: <span class="text-green">ONLINE</span></div>
+          <div class="sys-status-line">NODE: PRODUCTION_01</div>
+          <div class="sys-status-line">LATENCY: 12ms</div>
+          <div class="sys-status-line">ENCRYPTION: TLS_AES_256</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 SYSADMIN PATH. Built as an individual web development project.</div>
+      <div class="font-mono text-muted">TERMINAL_VER 2.4.0</div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
